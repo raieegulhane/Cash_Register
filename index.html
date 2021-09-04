@@ -15,33 +15,33 @@
             <h1 class="header-title">CASH REGISTER</h1>
             <p class="header-text">
                 Enter the bill amount and cash received from customer to 
-                find the minimum number of notes or coins that needs to be returned.
+                find the minimum number of notes to be returned.
             </p>
         </header>
 
-        <div class="div-bill-amount">
+        <div class="input-div div-bill-amount">
             <label for="bill-amount" class="input-label">Bill Amount:</label>
             <input id="bill-amount" class="input-box" type="number">
             <button id="button-next">Next</button>
         </div>
 
-        <div class="div-cash-received">
+        <div class="input-div div-cash-received">
             <label for="cash-received" class="input-label">Cash Received:</label>
             <input id="cash-received" class="input-box" type="number">
             <button id="button-check">Check</button>
         </div>
 
-        <div id="error-message"></div>
+        <div id="message"></div>
 
         <div class="div-return-amount">
-            <div id="return-amount-value">Return amount: <span id="amount"></span> ₹</div>
+            <div id="return-amount-value">Amount to be returned: <span id="amount"></span> ₹</div>
             
             <div class="return-change">
-                <label for="change to be returned" class="return-change-label">Change required:</label>
+                <label for="change-to-be-returned" class="return-change-label">Change required</label>
 
                 <table id="return-change-table">
                     <tr class="no-of-notes">
-                        <th>Number of notes/coins</th>
+                        <th>No of notes</th>
                         <td class="notes"></td>
                         <td class="notes"></td>
                         <td class="notes"></td>
