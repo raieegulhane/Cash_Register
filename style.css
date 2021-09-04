@@ -34,6 +34,10 @@ body {
     display: none;
 }
 
+#error-message {
+    display: none;
+}
+
 label {
     display: block;
 }
