@@ -6,69 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <section class="container">
 
-        <header class="header">
-            <h1 class="header-title">CASH REGISTER</h1>
-            <p class="header-text">
-                Enter the bill amount and cash received from customer to 
-                find the minimum number of notes to be returned.
-            </p>
-        </header>
+    <header>
+        <h1>CASH REGISTER</h1>
+    </header>
 
-        <div class="input-div div-bill-amount">
-            <label for="bill-amount" class="input-label">Bill Amount:</label>
-            <input id="bill-amount" class="input-box" type="number">
-            <button id="button-next">Next</button>
-        </div>
-
-        <div class="input-div div-cash-received">
-            <label for="cash-received" class="input-label">Cash Received:</label>
-            <input id="cash-received" class="input-box" type="number">
-            <button id="button-check">Check</button>
-        </div>
-
-        <div id="message"></div>
-
-        <div class="div-return-amount">
-            <div id="return-amount-value">Amount to be returned: <span id="amount"></span> ₹</div>
-            
-            <div class="return-change">
-                <label for="change-to-be-returned" class="return-change-label">Change required</label>
-
-                <table id="return-change-table">
-                    <tr class="no-of-notes">
-                        <th>No of notes</th>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                        <td class="notes"></td>
-                    </tr>
-                    <tr id="note-value">
-                        <th>Note Value</th>
-                        <td>2000</td>
-                        <td>500</td>
-                        <td>100</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>1</td>
-                    </tr>
-                </table>
+    <div class="container">
+        <div class="container-inner">
+            <div class="text">
+                Enter the bill amount and cash received from customer to find the minimum number of notes to be returned.
             </div>
 
-            </table>
+            <div class="input-div div-bill-amount">
+                <label for="bill-amount">Bill Amount:</label>
+                <input id="bill-amount" class="input-box" type="number">
+                
+                <button id="button-next">Next</button>
+            </div>
+
+            <div class="input-div div-cash-received">
+                <label for="cash-received">Cash Received:</label>
+                <input id="cash-received" class="input-box" type="number">
+                
+                <button id="button-check">Check</button>
+            </div>
+
+            <div id="message"></div>
+
+            <div class="return">
+                <div class="return-text">
+                    Amount to be returned: <span id="amount"></span> ₹
+                </div>
+
+                <div class="div-return-table">
+                    <label for="change-to-be-returned" class="return-table-head">
+                        Change required
+                    </label>
+
+                    <table id="return-table">
+                        <tr>
+                            <th>No of notes</th>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                            <td class="notes"></td>
+                        </tr>
+                        <tr>
+                            <th>Note Value</th>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td>100</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
+   </div>
 
-    </section>
+    
+
+       
+
+        
+
+        
 
 
-    <script src="app.js"></script>
+  
+
+
+    <script src="/app.js"></script>
 </body>
 </html>
