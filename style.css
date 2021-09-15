@@ -5,94 +5,75 @@
     --font: 'Poppins', sans-serif;
 
     /* colors */
-    --back: #f5efea;
-
-    /* --main1: #5ee1f1;
-    --main2: #f69f98;
-    --light: #fdd5c8; */
-    --red: #f9688d;
-    --pink1: #f8b6b6;
-    --pink: #f8a3a3;
-    --light: #f8f0e8;
+    --back: #f7f3f0;
+    --pink1: #f9688d;
+    --pink2: #f897af;
+    --pink4: #fcecec;
+    --pink3: #f8d2d2;
+    --light: #fae9d9;
     --dark: #8d8292;
-    
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: var(--back);
     font-family: var(--font);
     text-align: center;
-    padding: 1.5rem;
-    margin: 0;
+}
 
+header {
+    color: var(--pink1);
+    font-size: 20px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    border-bottom: 3px solid var(--pink3);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    padding: 1.5rem;
+    padding: 2.5rem 1rem;
+}
+
+.container-inner {
+    background-color: var(--pink4);
+    max-width: 450px;
+    padding: 2rem 1.5rem;
     border-radius: 2rem;
     margin: auto;
-    box-shadow: 14px 14px 20px #cbced1, 
-        -14px -14px 20px #dbdbdb;
-    
 }
 
-.header {
-    padding-top: 0.5rem;
-    padding-bottom: 3rem;
-}
-
-.header-title {
-    color: var(--red);
-    font-size: 35px;
-    padding-bottom: 0.3rem;
-    margin: 0;
-}
-
-.header-text {
+.text {
     color: var(--dark);
-    font-size: 13px;
-    line-height: 15px;
-    max-width: 80%;
-    text-align: center;
+    max-width: 400px;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--pink3);
     margin: auto;
 }
 
-.input-div {
-    max-width: 300px;
-    width: 100%;
-    padding-bottom: 2rem;
-    margin: auto;
-}
 label {
     display: block;
-    color: var(--pink);
-    font-size: 17px;
+    color: var(--pink2);
+    font-size: 16px;
     font-weight: bold;
-    min-width: 50%;
-    text-align: left;
-    padding-left: 1.6rem;
-    padding-bottom: 0.2rem;
+    padding-top: 2rem;
 }
 
 input {
-    color: var(--dark);
-    font-family: var(--font);
-    font-size: 15px;
-    font-weight: bold;
     display: block;
-    max-width: 230px;
-    width: 100%;
-    background-color: var(--back);
+    background-color: var(--pink4);
+    color: var(--pink1);
+    font-family: var(--font);
+    font-size: 17px;
+    font-weight: bold;
+    max-width: 75%;
+    padding: 0.7rem 1.5rem;
+    border: none;
     border-radius: 1rem;
-    padding: 0.7rem 1.2rem;
-    border:none;
     outline: none;
-    margin: auto;
-    box-shadow: inset 6px 6px 6px #dddddd, 
-        inset -6px -6px 7px white;
+    margin: 0.1rem auto;
+    box-shadow: inset 3px 3px 3px #bbb, inset -3px -3px 3px #fff;
 }
 
 .div-cash-received {
@@ -100,56 +81,55 @@ input {
 }
 
 button {
-    display: block;
+    background-color: var(--pink1);
     color: var(--back);
     font-family: var(--font);
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--red);
-    padding: 0.3rem 1.5rem;
-    border: none;
-    border-radius: 3rem;
-    margin: 1rem auto;
-    cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 6px 6px 6px #cbced1, 
-        -6px -6px 6px white;
+    padding: 0.2rem 1.5rem;
+    border: 3px solid var(--pink1);
+    border-radius: 4rem;
+    margin: 1.5rem;
+    transition: 0.7s ease;
 }
 
 button:hover {
-    background-color: var(--back);
-    color: var(--red);
-    box-shadow: inset 10px 10px 10px #dddddd, 
-        inset -10px -10px 10px white;
+    background-color: var(--pink4);
+    color: var(--pink1);
 }
 
 #message {
     display: none;
-    color: var(--back);
-    background-color: var(--dark);
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 2rem;
-}
-
-.div-return-amount {
-    display: none;
-}
-
-#return-amount-value {
     background-color: var(--dark);
     color: var(--back);
     font-size: 17px;
     font-weight: bold;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;;
+    letter-spacing: 0.7px;
+    word-spacing: 2.5px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 
-.return-change-label {
-    text-align: center;
-    padding: 0 0 0.5rem 0;
+.return {
+    display: none;
+}
+
+.return-text {
+    background-color: var(--dark);
+    color: var(--back);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    word-spacing: 2.5px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.return-table-head {
+    font-size: 17px;
+    padding-bottom: 0.5rem;
 }
 
 table {
@@ -167,7 +147,57 @@ td, th {
 
 td {
     min-width: 25px;
+} 
+
+footer {
+    padding: 1rem;
+    border-top: 3px solid var(--pink3);
 }
+
+.social-media-title {
+    color: var(--pink2);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+svg {
+    fill: var(--pink2);
+    width: 35px;
+    height: 35px;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+svg:hover {
+    fill: var(--back);
+    background-color: var(--pink1);
+    border-color: var(--pink1);
+}
+
+.github-sourcecode {
+    color: var(--pink2);
+    font-size: 13px;
+}
+
+.git-repo {
+    color: var(--pink2);
+    border: 2px solid var(--back);
+    border-radius: 5px;
+}
+
+.git-repo:hover {
+    background-color: var(--pink1);
+    color: var(--back);
+    border-color: var(--pink1);
+}
+
+
 
 
 
