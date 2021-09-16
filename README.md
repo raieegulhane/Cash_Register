@@ -9,3 +9,6 @@ DESCRIPTION:
 
 <br>
 APP PREVIEW:
+<br>
+![image](https://user-images.githubusercontent.com/64693025/133595374-a408d0bd-cea7-4e09-b9be-bcc9377bdae1.png)
+
