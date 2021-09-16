@@ -67,7 +67,7 @@ input {
     font-family: var(--font);
     font-size: 17px;
     font-weight: bold;
-    max-width: 75%;
+    max-width: 60%;
     padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 1rem;
